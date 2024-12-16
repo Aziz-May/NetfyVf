@@ -1,0 +1,50 @@
+.container{
+    display :flex ; 
+    background-image: url('Netflix.png');
+    height : 80vh ;
+  
+    align-items: center ;
+    justify-content: space-around ;
+    align-items: flex-end;
+
+
+}
+
+
+
+
+.inscriptionContainer{
+    display:flex ;
+    align-items: center ;
+    /*background-color: red;*/
+    width : 60% ;
+    justify-content: space-around ;
+    flex-wrap: nowrap;
+    
+    align-items: flex-end;
+    position:absolute ;
+    bottom : -2%
+
+ 
+
+    
+    
+    
+    
+    
+    
+}
+.inscription {
+    background: linear-gradient(135deg, #141414, #1c1c1e, #2f2f30, #4b4b4d);
+   
+    
+    
+  
+    
+    
+    padding : 50px ; 
+    
+    border : solid 2px white ;
+    z-index: 1;
+   
+}

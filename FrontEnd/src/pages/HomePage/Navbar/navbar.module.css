@@ -1,0 +1,161 @@
+
+.container{
+    /*overflow: auto;*/
+    display:flex ; 
+    white-space: nowrap;
+    background-color: transparent ;
+    margin : 0px ;
+    height: 10vh;
+    justify-content: space-between ;
+   /*background-color: rgb(130, 124, 124);*/
+} 
+.Rlist{
+    display:flex ;
+    justify-content: baseline;
+    list-style-type: none ;
+    justify-content: space-between ;
+}
+.link{
+    list-style-type: none;
+   color : rgba(250, 91, 91, 0.778) ;
+   text-align: center;
+   font-size: 1px;
+   
+   justify-content: center;
+   display:flex;
+   padding:0px ;
+   margin:10px  50px;
+   transition-duration: 500ms;
+   text-shadow: 0px 0px 5px rgba(155, 134, 134, 0.838); ;
+   cursor : pointer 
+
+}
+
+
+
+
+.logoItem{
+    
+
+    /*background-color: rgb(241, 33, 33);*/
+    list-style-type: none;
+    display:inline-flex;
+    text-align: start;
+    justify-content: center;
+}
+.navitems {
+    /*background-color: rgb(130, 124, 200);*/
+   list-style-type: none;
+   color : rgba(250, 91, 91, 0.778) ;
+   text-align: center;
+   justify-content: center;
+   display:inline-flex;
+   padding:20px 42px ;
+   transition-duration: 500ms;
+   text-shadow: 0px 0px 5px rgba(155, 134, 134, 0.838); ;
+   cursor : pointer ;
+   } 
+.navitems:hover{
+    color: rgba(252, 128, 128, 0.944) ;
+    text-decoration: underline;
+    font-size: 1.1rem;
+}
+.inputSearch{
+    
+    padding: 10px 20px; 
+    background-color: rgb(115, 115, 115);
+    margin: 2px;
+    width : 250px
+}
+#link_title{
+    margin:0px 10px;
+    font-size: 10px;
+}
+.Llist{
+    list-style-type: none ;
+   
+    display:flex ;
+    justify-content: baseline;
+    
+    
+
+}
+.Llist > *{
+    padding:20px;
+    justify-content: center;
+}
+
+.circle {
+    width: 40px; /* Diameter of the circle */
+    height: 40px; /* Diameter of the circle */
+    border-radius: 50%; /* Makes it circular */
+    background-color: #4c65af; /* Background color */
+    color: white; /* Text color */
+    display: flex; /* Centering content */
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+    font-size: 18px; /* Font size of the initials */
+    font-weight: bold; /* Bold text */
+
+    
+  }
+ 
+  .circleItem{
+    margin-top: 10px;
+    display:flex ;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: visible;
+ }
+ .userinfos{
+    width:200px;
+    /*list-style: none;*/
+    list-style: none; /* Remove default bullets */
+    padding: 0;
+    
+ }
+  .userinfos li {
+    
+    padding:10px;
+    
+    color: rgb(97, 16, 16);
+    background-color :rgb(160, 117, 117) ;
+    transition-duration: 1000;
+    position: relative;
+    padding-left: 20px; /* Space for the triangle on hover */
+    font-size: 16px;
+
+  }
+  .userinfos:first-child{
+    margin-top: 20px;
+  }
+  .userinfos li:hover{
+    background-color :rgb(214, 129, 129) ;
+    color: rgb(180, 23, 23);
+    font-size: 1.1rem;
+    list-style-type:symbols();
+
+  }
+  
+
+ 
+  .userinfos li::before {
+    content: ""; /* Initially hidden */
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 25px 15px 25px 0px; /* Triangle size */
+    border-color: transparent transparent transparent transparent; /* Initially transparent */
+    transition: border-color 0.3s; /* Smooth transition */
+  }
+
+  .userinfos li:hover::before {
+    border-color: #931c1cdb transparent transparent transparent; /* Triangle color on hover */
+  }
+
+

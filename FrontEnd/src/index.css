@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+
+html, #root {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+body {
+    font-family: 'poppins', sans-serif;
+    /*margin: 0;
+    padding: 0;*/
+    background-image: url("./assets/bg-net.jpeg");
+    background-size: cover;
+    
+   
+   
+}
+/* Styles généraux pour le body */
+
+/* Style de la navbar */
+/*.navbar {
+    background-color:transparent; /* Couleur de fond */
+    /*padding: 10px 20px; /* Espacement interne */
+/*}*/
+
+/* Liste de la navbar */
+/*.navbar__list {
+    list-style-type: none; /* Supprime les puces */
+    /*display: flex; /* Affiche les éléments en ligne */
+    /*justify-content: space-around; /* Espace uniforme entre les éléments */
+/*}*/
+
+/* Éléments de la navbar */
+/*.navbar__item {
+    margin: 0 15px; /* Espacement entre les éléments */
+/*}
+
+/* Liens de la navbar */
+/*.navbar__link {
+    color: white; /* Couleur du texte */
+    /*text-decoration: none; /* Supprime le soulignement */
+    /*padding: 8px 16px; /* Espacement autour du texte */
+    /*border-radius: 4px; /* Coins arrondis */
+    /*transition: background-color 0.3s, transform 0.3s;
+}
+
+/* Effet au survol des liens */
+/*.navbar__link:hover {
+    background-color: #555; /* Couleur de fond au survol */
+    /*width:550px;
+    height: 550px;
+    transform: scale(1.1);
+
+/*}*/

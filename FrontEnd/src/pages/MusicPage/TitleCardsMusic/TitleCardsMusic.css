@@ -1,0 +1,28 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.titlecards{
+    background-color: transparent;
+    margin-top: 50px; 
+    margin-bottom: 30px; 
+    width: 1400px;
+    margin-left: 50px;
+    margin-right: 0;
+ 
+    position: relative;
+
+}
+.titlecards h2{
+    margin-bottom: 8px;
+}
+.card_list{
+    
+    overflow-x: scroll;
+}
+.card_list::-webkit-scrollbar{
+    display: none;
+}
+

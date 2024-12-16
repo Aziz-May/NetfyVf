@@ -1,0 +1,70 @@
+* Favourites page container */
+.favourites-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px;
+}
+
+/* Title for Favourites page */
+h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    color: #333;
+}
+
+/* Favourite item card */
+.favourite-item {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ddd;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect for favourite item card */
+.favourite-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Favourite title */
+.favourite-item h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Favourite description */
+.favourite-item p {
+    font-size: 1rem;
+    color: #666;
+}
+
+/* No favourites message */
+.no-favourites {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #888;
+}
+
+/* Back to Home button */
+.back-home-button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+}
+
+.back-home-button:hover {
+    background-color: #0056b3;
+}

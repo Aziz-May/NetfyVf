@@ -1,0 +1,96 @@
+h2{
+    font-weight: bold;
+    font-size: large;
+    font-style: italic;
+    color:#660C15;
+}
+.signupSection{
+    background-image: url(../../images/aflem.jpg);
+
+}
+
+/* Formulaire d'inscription */
+.signupContainer {
+    background: linear-gradient(to right, #660C15, #000000);
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    max-width: 400px;
+   
+    margin: 0 auto;
+}
+
+.signupContainer h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.signupContainer p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+/* Style des champs du formulaire */
+.formGroup {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.formGroup label {
+    font-size: 16px;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.formGroup input {
+    width: 100%;
+    padding: 10px;
+    background-color: #2D122F;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+    color: white;
+    transition: border-color 0.3s ease;
+}
+
+.formGroup input:focus {
+    border-color: #007bff;
+    background-color: #610B14;
+    outline: none;
+}
+
+/* Style du bouton d'inscription */
+.submitButton {
+    background-color: #E50914;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+.submitButton:hover {
+    background-color: #2C0B22;
+}
+
+/* Lien vers la page de connexion */
+.signupContainer p a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.signupContainer p a:hover {
+    text-decoration: underline;
+}
+
+.formGroup input:valid{
+    background-color: transparent;
+}
+.connect{
+    margin: 10px 0px ;
+    padding : 10px 15px ;
+    background-color: #E50914 ;
+}

@@ -1,0 +1,213 @@
+/* Global Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body{
+    margin: 0;padding: 0;
+    background-color: rgb(0, 0, 0);
+    background-image: none;
+    color: white;
+    width:100wh;
+    
+}
+.serach_music{
+  display: flex;
+  z-index: 3000;
+  
+  height: 50px;
+  margin-bottom: 200px;;
+  
+  justify-self: center;
+  background-color: rgba(173, 173, 173, 0.4);
+  border-radius: 10px;
+  width: 60%;
+
+}
+  /* Music Page Container */
+  /*.music-page {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }*/
+  
+  /* Header Styles */
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+  }
+  
+  header h1 {
+    color: #ff0000;
+    font-size: 2.5rem;
+    font-weight: bold;
+  }
+  
+  header nav {
+    display: flex;
+    gap: 20px;
+  }
+  
+  header nav a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  header nav a:hover {
+    color: #ff0000;
+  }
+  
+  /* Search Container */
+  .search-container {
+    margin-bottom: 200px;
+  }
+  
+  .search-container input {
+    width: 60%;
+    justify-self: center;
+    padding: 15px;
+    background-color: #1a1a1a;
+    color: #fff;
+    border: 2px solid #ff0000;
+    border-radius: 30px;
+    font-size: 1rem;
+  }
+  .hero{
+    position: relative;
+   
+}
+.banner_img{
+   
+    width:100% ; 
+    mask-image: linear-gradient(to right , transparent,black 75%);
+    -weblit-mask-image:linear-gradient(to right , transparent,black 75%);
+    
+
+}
+.hero_caption_music{
+  position: absolute;
+   
+    width : 80% ; 
+    
+    padding-left: 6%; 
+    
+    bottom:300px ; 
+}
+.musicIntro {
+    max-width: 400; 
+    font-size: 40px;
+    margin-bottom: 120px;
+    color:white;
+     
+
+}
+  
+  /* Music and Genre Sections */
+  .music-section,
+  .genre-section {
+    margin-bottom: 40px;
+  }
+  
+  .music-section h2,
+  .genre-section h2 {
+    color: #ff0000;
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  /* Album Grid */
+  .album-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+  }
+  
+  /* Album Card */
+  .album-card {
+    background-color: #1a1a1a;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+  }
+  
+  .album-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .album-image {
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+  }
+  
+  .album-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .album-info {
+    padding: 15px;
+  }
+  
+  .album-info h3 {
+    color: #fff;
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+  }
+  
+  .album-info p {
+    color: #888;
+    font-size: 0.9rem;
+  }
+  
+  /* Genre Sections with Slight Variations */
+  .genre-section .album-grid {
+    background-color: rgba(255, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  /* Footer */
+  footer {
+    text-align: center;
+    padding: 20px;
+    border-top: 1px solid #ff0000;
+    color: #888;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 1200px) {
+    .album-grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  
+  @media (max-width: 900px) {
+    .album-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .album-grid {
+      grid-template-columns: 1fr;
+    }
+  
+    header {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    header nav {
+      margin-top: 20px;
+    }
+  }
+  .serachMusicImg{
+    height: 45px;
+  }

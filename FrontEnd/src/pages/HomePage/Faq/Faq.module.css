@@ -1,0 +1,117 @@
+/*
+  .FAQ__list__container {
+    padding: 20px;
+    width:100%
+  }
+  .FAQ__list{
+    display:flex ;
+    
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .FAQ__heading {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .FAQ__accordian {
+    margin-bottom: 10px;
+    
+    
+  }
+  
+  .FAQ__title {
+   width: 50%;
+    text-align: center;
+    background: #414141;
+    border: solid 2px  #939191;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    position: relative;
+  }
+  
+  .FAQ__title.active {
+    background: #350d0d;
+  }
+  
+  .FAQ__visible {
+    max-height: 0;
+    transform: translateY(-20px);
+    overflow: hidden;
+  }
+  
+  */
+  .FAQ__list__container {
+    padding: 20px;
+  
+    width:100%;
+    margin: auto;
+  }
+  
+  .FAQ__heading {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+  
+  .FAQ__list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   /* width:100%;*/
+    gap: 10px;
+  }
+  
+  .FAQ__accordian {
+    border: none;
+    padding: 10px;
+    margin: 10px;
+    background-color: #3e3e3e;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(93, 93, 93, 0.1);
+    width:50%;
+  }
+  
+  .FAQ__title {
+    background: none;
+    border: none;
+    font-size: 18px;
+    text-align: left;
+    width: 100%;
+    cursor: pointer;
+    padding: 10px 0;
+    
+  }
+  
+  .FAQ__content {
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: all 0.4s ease;
+  }
+  
+  .FAQ__content p {
+    margin: 0 0 10px 0;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  .FAQ__accordian:hover {
+    background-color:rgb(199, 19, 19); /* red background */
+    color: #fff; /* White text */
+  }
+  .FAQ__title:hover
+
+ {
+  
+  background-color: transparent; /* Keep background transparent when hovered/focused */
+}
+
+
+ 

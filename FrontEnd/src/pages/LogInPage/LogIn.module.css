@@ -1,0 +1,196 @@
+
+/** {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }*/
+  
+  /* Style du corps */
+  /*body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    
+    
+  }*/
+  .containerOfContainer{
+    height : 100vh ; 
+    width : 100% ;
+    display : flex ; 
+    justify-content: center;
+    align-items: center;
+    background-image: url(../../images/aflem.jpg);
+  }
+  /* Conteneur principal */
+  .container {
+    /*background-color:rgba(50, 50, 50, 0.5);*/
+    background: linear-gradient(to right,#660C15, #000000);
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    padding: 20px;
+  }
+  
+  /* Style de la section de login */
+  .login {
+    text-align: center;
+  }
+  
+  /* Image de login */
+ /* .login__img {
+    width:50px;
+    height=50px;
+    border-radius: 10px;
+  }*/
+  
+  /* Titre du login */
+  .login__title {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 20px 0;
+    color:white;
+    text-align: left;
+
+  }
+  #namelogin{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: #790B14;
+    font-size: 50px;
+  }
+  /* Description */
+  .login__description {
+    font-size: 14px;
+    color:white;
+    margin-bottom: 30px;
+  }
+  
+  /* Style des entrées de login */
+  .login__inputs {
+    margin-bottom: 20px;
+
+  }
+  
+  .login__label {
+    display: block;
+    font-size: 15px;
+    color:white;
+    margin-bottom: 5px;
+    text-align: left;
+    margin-top: 10px;
+
+  }
+  
+  .login__input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: border-color 0.3s;
+  }
+  
+  .login__input:focus {
+    border-color: #007bff;
+    outline: none;
+    background:linear-gradient(to right,#610B14, #2D1330); ;
+  }
+  
+  /* Boîte du mot de passe */
+  .login__box {
+    position: relative;
+  }
+  
+  /* Icône de visibilité */
+  .login__eye {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    cursor: pointer;
+  }
+  
+  /* Style pour la case à cocher */
+  .login__check {
+    margin: 15px 0;
+    text-align: left;
+  }
+  
+  .login__checkLabel {
+    font-size: 14px;
+    color: #555;
+  }
+  
+  .login__checkInput {
+    margin-right: 5px;
+  }
+  
+  /* Style des boutons */
+  .login__buttons {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .login__button {
+    background-color:#E50914;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s;
+  }
+  
+  .login__button:hover {
+    background: linear-gradient(to right, #2C0B22, #000000);
+  }
+  
+  .login__buttonGhost {
+    background-color: transparent;
+    border: 1px solid #007bff;
+    color: #007bff;
+  }
+  
+  .login__buttonGhost:hover {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  /* Lien de mot de passe oublié */
+  .login__forgot {
+    display: block;
+    margin-top: 10px;
+    font-size: 12px;
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .login__forgot:hover {
+    text-decoration: underline;
+  }
+.login__input{
+    background: linear-gradient(to right, #2C0B22, #000000);
+    color:white;
+
+}
+.login__input:focus{
+    background-color:#2D122F;
+}
+.b1{
+    display: block;
+    position: relative;
+    left: 15px;
+}
+.b2{
+    display:block;
+}
+h2{
+    font-weight: bold;
+    font-size: 40px;
+    font-style: italic;
+    color:#660C15;
+}
