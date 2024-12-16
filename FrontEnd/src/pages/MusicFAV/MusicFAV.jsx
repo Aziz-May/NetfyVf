@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Play, Info, Heart, Plus } from "lucide-react";
-import './MusicFav.css'
+import './MusicFav.css' ;
+import { Link } from 'react-router-dom';
 
 function MusicFAV() {
     const [favouritesMusic, setFavouritesMusic] = useState([]);
@@ -12,9 +13,9 @@ function MusicFAV() {
         setFavouritesMusic(savedFavouritesMusic);
     }, []);
 
-    // Function to remove a movie from favorites
+    // Function to remove a music from favorites
     const removeFromFavoritesMusic = (musicToRemove) => {
-        const updatedFavoritesMusic = favourites.filter(
+        const updatedFavoritesMusic = favouritesMusic.filter(
             (music) => music.title !== musicToRemove.title
         );
         
@@ -67,16 +68,20 @@ function MusicFAV() {
                                                 <span>• {music.genres}</span>
                                             </div>
                                             <div className="flex space-x-2">
-                                                <button
-                                                    className="flex items-center justify-center bg-green-600 text-white px-3 py-2 rounded-full hover:bg-green-700 transition text-sm"
-                                                    onClick={(e) => {
-                                                        e.stopPropagation();
-                                                        alert("Play clicked");
-                                                    }}
-                                                >
-                                                    <Play className="mr-2 w-4 h-4" />
-                                                    Play
-                                                </button>
+                                            <Link to={`/MusicPlayer/${music._id}`}>
+
+                    
+<button
+  className="flex items-center justify-center bg-green-600 text-white px-3 py-2 rounded-full hover:bg-green-700 transition text-sm"
+  onClick={(e) => {
+    e.stopPropagation();
+    
+  }}
+>
+  
+  Play
+</button>
+</Link>
                                                 <button
                                                     className="flex items-center justify-center bg-blue-600 text-white px-3 py-2 rounded-full hover:bg-blue-700 transition text-sm"
                                                     onClick={(e) => {

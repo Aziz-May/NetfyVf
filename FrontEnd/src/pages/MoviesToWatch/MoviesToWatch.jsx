@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Play, Info, Heart, Plus, Trash } from "lucide-react";
+import { Link } from "react-router-dom";
 
 function MoviesToWatch() {
     const [watchList, setWatchList] = useState([]);
@@ -66,16 +67,18 @@ function MoviesToWatch() {
                                                 <span>• {movie.genre}</span>
                                             </div>
                                             <div className="flex space-x-2">
-                                                <button
-                                                    className="flex items-center justify-center bg-green-600 text-white px-3 py-2 rounded-full hover:bg-green-700 transition text-sm"
-                                                    onClick={(e) => {
-                                                        e.stopPropagation();
-                                                        alert("Play clicked");
-                                                    }}
-                                                >
-                                                    <Play className="mr-2 w-4 h-4" />
-                                                    Play
-                                                </button>
+                                            <Link to={`/Player/${movie._id}`}>
+                      <button
+                        className="flex items-center justify-center bg-green-600 text-white px-3 py-2 rounded-full hover:bg-green-700 transition text-sm"
+                        onClick={(e) => {
+                          e.stopPropagation();
+                          
+                        }}
+                      >
+                        <Play className="mr-2 w-4 h-4" />
+                        Play
+                      </button>
+                      </Link>
                                                 <button
                                                     className="flex items-center justify-center bg-blue-600 text-white px-3 py-2 rounded-full hover:bg-blue-700 transition text-sm"
                                                     onClick={(e) => {

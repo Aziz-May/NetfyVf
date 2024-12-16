@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { useParams } from 'react-router-dom';
 import { PORT } from '../../../../BackEnd/MERN_Netfy/config.js';
+import { Link } from 'react-router-dom';
 
 const PlaylistTracks = ({ playlist, onTrackRemove }) => {
   const [expandedCardIndex, setExpandedCardIndex] = useState(null);
@@ -72,16 +73,18 @@ const PlaylistTracks = ({ playlist, onTrackRemove }) => {
                       <span>• {track.genre}</span>
                     </div>
                     <div className="flex space-x-2">
+                    <Link to={`/MusicPlayer/${track._id}`}>
                       <button
                         className="flex items-center justify-center bg-green-600 text-white px-3 py-2 rounded-full hover:bg-green-700 transition text-sm"
                         onClick={(e) => {
                           e.stopPropagation();
-                          // TODO: Implement play functionality
-                          alert("Play clicked");
+                         
+                          
                         }}
                       >
                         Play
                       </button>
+                      </Link>
                       <button
                         className="flex items-center justify-center bg-blue-600 text-white px-3 py-2 rounded-full hover:bg-blue-700 transition text-sm"
                         onClick={(e) => {

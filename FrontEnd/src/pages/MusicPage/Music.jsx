@@ -78,9 +78,9 @@ const Music = () => {
   const getMusicsByGenre = (genre) => {
     return musics?.filter((music) => 
       music.genres
-        .split(",")  // Split the genres if they are stored as a comma-separated list
-        .map(g => g.trim().toLowerCase())  // Trim and convert to lowercase
-        .includes(genre.toLowerCase())  // Check if the genre matches
+        .split(",")  
+        .map(g => g.trim().toLowerCase())  
+        .includes(genre.toLowerCase())  
     ) || [];
   };
   
